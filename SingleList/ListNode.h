@@ -19,15 +19,15 @@ private:
     
 	ListNode():nextNode(NULL){}
 	
-    ListNode(const Type item,ListNode<Type> *next=NULL):nodeData(item),nextNode(next){}
+        ListNode(const Type item,ListNode<Type> *next=NULL):nodeData(item),nextNode(next){}
 	
-    ~ListNode(){
+        ~ListNode(){
 		nextNode=NULL;
 	}
     
 public:
 	Type GetData();
-    friend ostream& operator<< <Type>(ostream& ,ListNode<Type>&);
+        friend ostream& operator<< <Type>(ostream& ,ListNode<Type>&);
 
 private:
 	Type nodeData;
